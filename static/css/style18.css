@@ -1,0 +1,28 @@
+.content .Questions18Page h1{
+    width: 300px;
+    background: var(--gadiant-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 20%;
+    margin-bottom: 1rem;
+}
+.content .Questions18Page h5{
+    border: 1px dashed var(--main-color);
+    padding: 5px;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.content .Questions18Page .QuezData18 .ItemQuiz{
+    margin-bottom: 1.5rem;
+}
+.content .Questions18Page .QuezData18 .ItemQuiz .Quiz{
+    margin-bottom: 1.5rem;
+}
+.content .Questions18Page .QuezData18 .ItemQuiz .option{
+   margin-bottom: .5rem;
+}

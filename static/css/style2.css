@@ -1,0 +1,41 @@
+.reportTitles2{
+    margin-top: 6rem;
+    width: 400px;
+    border-bottom: .5px solid black;
+    padding: 5px 0;
+    margin-bottom: 2rem;
+}
+.TitlesItems2{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.TitlesItems2 .item2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.TitlesItems2 .item2 .itemNumber2{
+    border: 1px solid var(--main-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TitlesItems2 .item2 .detailsTitle2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+}
+.TitlesItems2 .item2 .detailsTitle2 div:nth-child(1){
+    letter-spacing: 1px;
+    width: 30%;
+}
+.Appen2{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}

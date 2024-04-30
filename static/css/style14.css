@@ -1,0 +1,87 @@
+.content .contentContainer14{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    position: relative;
+}
+.content .contentContainer14 .card14{
+    padding: 1rem;
+    width: 250px;
+    position: relative;
+}
+.content .contentContainer14 .card14:nth-child(1){
+    border: 1px dashed var(--main-color);
+    height: 300px;
+}
+.content .contentContainer14 .card14 .card14Img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.content .contentContainer14 .card14 .card14Title{
+    margin-bottom: .5rem;
+    font-size: 16px;
+}
+.content .contentContainer14 .card14 .card14Desc{
+    margin-bottom: 2rem;
+}
+.content .contentContainer14 .card14 .card14Btn{
+    margin-bottom: .5rem;
+    position: absolute;
+    bottom:0;
+    left: 30%;
+    text-align: center;
+    background: var(--gadiant-color);
+    border:  none;
+    padding: 5px;
+    border-radius: 1rem;
+    color: white;
+    width: 100px;
+}
+.content div .solution14{
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    position: relative;
+    margin-bottom:1rem ;
+}
+.content div .solution14::before{
+    content: "----------------------";
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    color: var(--main-color);
+}
+.content div .solution14::after{
+    content: "--------------------------";
+    position: absolute;
+    top: -90%;
+    left: 3%;
+    color: var(--main-color);
+    transform: rotate(90deg);
+}
+.content h4.seize14{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.content .impactBtn14{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: var(--gadiant-color);
+    width: 300px;
+    color: white;
+    padding: 10px;
+    border-radius: 2rem;
+    margin-left:30% ;
+}
+.content .impactBtn14 .impactImg14{
+    width: 40px;
+    height: 40px;
+}
+.content .impactBtn14 .impactText14{
+    letter-spacing: 1.5px;
+}

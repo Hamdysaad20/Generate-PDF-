@@ -1,0 +1,52 @@
+.AssessmentContainer3 .Title3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.AssessmentContainer3 .desc3{
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+.AssessmentContainer3 .AssessmentCards{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.AssessmentContainer3 .AssessmentCards .CardItem3{
+    border-top: 1px solid grey;
+    width: 300px;
+    padding: 1rem;
+}
+.AssessmentContainer3 .AssessmentCards .CardItem3 h3{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.AssessmentContainer3 .AssessmentCards .CardItem3 .descCardItem{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.AssessmentContainer3 .AssessmentCards .CardItem3 .CardImage3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.AssessmentContainer3 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.AssessmentContainer3 .standard3{
+    border: 1px solid var(--main-color);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.AssessmentContainer3 .standard3 .logoStandard3{
+    width: 40px;
+    height: 40px;
+}

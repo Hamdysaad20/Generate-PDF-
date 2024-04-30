@@ -1,0 +1,67 @@
+/* Apply styles to the body */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+} */
+
+/* Apply styles to the h1 element */
+/* h1 {
+    color: red;
+    font-size: 24px;
+} */
+
+/* Apply styles to the p element */
+/* p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+} */
+
+/* Apply styles to the img element */
+/* img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color :#027C9B;
+    --paragraph-color :rgb(69, 67, 67);
+    /* --gadiant-color : linear-gradient(0deg, rgba(3,204,174,1) 0%, rgba(1,112,153,1) 100%); */
+    --gadiant-color : linear-gradient(0deg, rgba(1,112,153,1) 0%, rgba(3,204,174,1) 100%);
+}
+body{
+
+    background-color: gray;
+}
+section{
+    width: 816px;
+    height: 1056px;
+    margin: 2rem auto;
+    background-color: white;
+}
+.container{
+    padding: 1rem 4em;
+}
+p{
+    color: var(--paragraph-color);
+    letter-spacing: .6px;
+}
+.sectionWrapper .logo{
+    margin-bottom: 2rem;
+}
+.logo_image{
+    width: 50px;
+    height: 50px;
+}
+ul{
+    list-style: none;
+}

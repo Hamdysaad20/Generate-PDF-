@@ -1,0 +1,85 @@
+.Home26{
+    background: var(--gadiant-color);
+}
+.sectionWrapper .EndReportHeader26{
+    display: flex;
+    height: 30%;
+    gap: 1rem;
+    padding: 2rem 0 0;
+    margin-bottom: 4rem;
+}
+.sectionWrapper .EndReportHeader26 img{
+    width: 25%;
+   padding: 0 0 1rem 0;
+    border-bottom: 1px solid black;
+}
+.sectionWrapper .EndReportHeader26 p{
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    padding: 0 0 1rem 0;
+}
+.sectionWrapper .EndReportSection26{
+    position: relative;
+    margin-bottom: 10rem;
+}
+.sectionWrapper .EndReportSection26 .iconsChecked26{
+    position: relative;
+}
+.sectionWrapper .EndReportSection26 .iconsChecked26 .check26{
+    position: absolute;
+    left: 16.5%;
+    top: .3rem;
+    font-size: 20px;
+}
+.sectionWrapper .EndReportSection26 .iconsChecked26 .check026{
+    position: absolute;
+    left: 16.5%;
+    top: 5rem;
+    font-size: 20px;
+}
+.sectionWrapper .EndReportSection26 .iconsChecked26 .check0026{
+    position: absolute;
+    left: 16.5%;
+    top: 10rem;
+    font-size: 20px;
+}
+.sectionWrapper .EndReportSection26 h4{
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.sectionWrapper .EndReportSection26 .Check26{
+    color: white;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.sectionWrapper .EndReportSection26 .Check26 input{
+    outline: none;
+    border: none; 
+    width: 20px;
+    height: 20px;   
+}
+.sectionWrapper .EndReportSection26 .Check26 label{
+    width: 50%;
+}
+.sectionWrapper .EndReportSection26 .Check26 i{
+    font-size: 30px;
+}
+.EndReportFooter26{
+    border: 1px dashed var(--main-color);
+    padding: 1rem .5rem;
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.EndReportFooter26 div{
+    margin-bottom: 1rem;
+}

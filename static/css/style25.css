@@ -1,0 +1,61 @@
+.content25{
+    position: relative;
+}
+
+.gridComponent25{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    border: 1px solid var(--main-color);
+    margin-bottom: 4rem;
+}
+.gridComponent25 .one25{
+    grid-column:1/6;
+    background: linear-gradient(0deg, rgba(1,112,153,1) 0%, rgba(3,204,174,1) 100%);
+    text-align: center;
+    padding: .7rem;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+   
+}
+
+.three25{
+    padding: .5rem;
+    grid-column: 1/2;
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    font-size: 15px;
+}
+.four25{
+    padding: .5rem;
+    grid-column: 2/6;
+    border-bottom: 1px solid var(--main-color);
+    font-size: 12px;
+}
+.Governance25{
+    position: absolute;
+    left: -31%;
+    top:21.5%;
+    transform: rotate(270deg);
+    padding: 1rem;
+    width: 380px;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    background: linear-gradient(0deg, rgba(1,112,153,1) 0%, rgba(3,204,174,1) 100%);
+}
+.governanceData25 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.governanceData25 .governanceDataCard25{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.governanceData25 .governanceDataCard25 p{
+    margin-bottom: .5rem;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}

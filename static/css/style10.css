@@ -1,0 +1,49 @@
+.content_company10{
+    width: 220px;
+    border: 1px solid  var(--main-color);
+    padding: .5rem  ;
+    text-align: center;
+    border-radius: .7rem;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+.SWOTContainer10{
+    position: relative;
+}
+.cardsContainer10{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.cardsContainer10 .card {
+    width: 300px;
+    height: 400px;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-top: 8px solid var(--main-color);
+    border-right: 8px solid var(--main-color);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.cardsContainer10 .card p{
+    text-align: right;
+    margin-bottom: 1rem;
+}
+.cardsContainer10 .card .numbersCard{
+    height: 100px;
+    font-size: 15px;
+}
+.position10{
+    position: absolute;
+    top:30% ;
+    left: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 60px;
+    color: var(--main-color);
+    text-shadow: 3px 0px 0px black;
+}

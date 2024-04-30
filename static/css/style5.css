@@ -1,0 +1,16 @@
+.content_Page5 .ContentDesc5{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+.containerImage5{
+    width: 100%;
+    height: 500px;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+}
+.content_Page5 p{
+    font-size: 15px;
+}

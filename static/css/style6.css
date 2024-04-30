@@ -1,0 +1,76 @@
+.Results6 .ResultImg{
+    width: 100%;
+    height: 300px;
+    border: .5px solid black;
+    margin-bottom: 1rem;
+}
+.Results6 .resultData6{
+    border: .5px solid #84CCD0;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6 .resultTreeItem{
+    width: 23%;
+}
+.Results6 .resultTree6 .resultTreeItem h6{
+    margin-bottom: .5rem;
+}
+.Results6 .resultTree6 .resultTreeItem .iconLocation6{
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeOneImg6{
+    width: 100%;
+    height: 100px;
+    border: 1px solid gray;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeTwoImg6{
+    width: 100%;
+    height: 120px;
+    border: 1px solid gray;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeThreeImg6{
+    width: 100%;
+    height: 140px;
+    border: 1px solid gray;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeFourImg6{
+    width: 100%;
+    height: 160px;
+    border: 1px solid gray;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeFiveImg6{
+    width: 100%;
+    height: 180px;
+    border: 1px solid gray;
+}
+.Results6 .resultTree6 .resultTreeItem h4{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #a2a0a0;
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6 .resultTreeItem p{
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+.Results6 .resultDataEnd6{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 15px;
+    border-top: 1px solid black;
+    padding: .5rem 0;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}

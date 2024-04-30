@@ -1,0 +1,56 @@
+.content24{
+    position: relative;
+}
+
+.gridComponent24{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    border: 1px solid var(--main-color);
+}
+.gridComponent24 .one24{
+    grid-column:1/6;
+    background: linear-gradient(0deg, rgba(1,112,153,1) 0%, rgba(3,204,174,1) 100%);
+    text-align: center;
+    padding: .7rem;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.three24{
+    padding: .5rem;
+    grid-column: 1/2;
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    font-size: 15px;
+}
+.four24{
+    padding: .5rem;
+    grid-column: 2/6;
+    border-bottom: 1px solid var(--main-color);
+    font-size: 12px;
+}
+.Environmental24{
+    position: absolute;
+    left: -31%;
+    top:25%;
+    transform: rotate(270deg);
+    padding: 1rem;
+    width: 380px;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    background: linear-gradient(0deg, rgba(1,112,153,1) 0%, rgba(3,204,174,1) 100%);
+}
+.Social24{
+    position: absolute;
+    left: -24.5%;
+    top:74.3%;
+    transform: rotate(270deg);
+    padding: 1rem;
+    width: 290px;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    background: linear-gradient(0deg, rgba(1,112,153,1) 0%, rgba(3,204,174,1) 100%);
+}
