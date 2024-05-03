@@ -10,15 +10,18 @@ async def get_html_from_js(browser, js_file_path, css_directory):
         
         # Validate and add CSS files
         css_files = [file for file in os.listdir(css_directory) if file.endswith('.css')]
-        # print(f"Loading {len(css_files)} CSS files.")
         for css_file in css_files:
             css_path = os.path.join(css_directory, css_file)
             await page.addStyleTag({'path': css_path})
         
-        # print(f"Processing JS file: {js_file_path}")
         await page.addScriptTag({'path': js_file_path})
         html_content = await page.evaluate('''() => document.documentElement.outerHTML''')
-        # print(f"Successfully processed {js_file_path}")
+        
+        # Using regex to remove <script> ... </script> tags from html_content
+        import re
+        html_content = re.sub(r'<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>', '', html_content)
+        
+        print(f"Successfully processed {js_file_path}")
     except Exception as e:
         print(f"An error occurred while processing {js_file_path}: {e}")
         html_content = ""
@@ -33,7 +36,7 @@ async def process_js_files(js_directory, css_directory):
     js_files = [file for file in os.listdir(js_directory) if file.endswith('.js')]
     print(f"Found {len(js_files)} JS files.")
     js_files.sort(key=lambda x: int(x.split("script")[1].split(".js")[0]) if x.split("script")[1].split(".js")[0].isdigit() else 0)
-    # print(js_files)
+
     if not js_files:
         print("No JS files to process.")
         return ""
