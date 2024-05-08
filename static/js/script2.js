@@ -2,23 +2,33 @@
 let root2Ele = document.getElementById("root2");
 let section2Ele = document.createElement("section")
 let container2Ele = document.createElement("div")
+let HeaderEle = document.createElement("header");
 let sectionWrapper2Ele = document.createElement("div")
-let logo2Ele = document.createElement("div")
-let logo_img2Ele = document.createElement("img")
 let content2Ele = document.createElement("div")
 
 // Add Classes
 container2Ele.classList.add("container");
 sectionWrapper2Ele.classList.add("sectionWrapper");
-logo2Ele.classList.add("logo");
-logo_img2Ele.classList.add("logo_image");
+HeaderEle.classList.add("header");
 content2Ele.classList.add("content");
 
- // set Attribute
- logo_img2Ele.setAttribute("src", "/static/images/logo.png");
- logo_img2Ele.setAttribute("alt", "logo");
+ 
 
 //  inner Html
+HeaderEle.innerHTML = `
+    <div class="headerWrapper">
+        <div class="headerItem">
+            <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+        </div>
+        <div class="headerItem">Contents</div>
+        <div class="headerItem headerItemRight">
+            <p>LevelUp ESG</p>
+            <p>|</p>
+            <p class="AssessmentContent">Sustainability Maturity
+            <br/>Assessment </p>
+        </div>
+    </div>
+`
 content2Ele.innerHTML = `
 <h1 class="reportTitles2">Contents of the Report</h1>
 <div class="TitlesItems2">
@@ -78,7 +88,9 @@ content2Ele.innerHTML = `
    // AppendChild
 document.body.appendChild(section2Ele)
 section2Ele.appendChild(container2Ele)
+container2Ele.appendChild(HeaderEle)
 container2Ele.appendChild(sectionWrapper2Ele)
-sectionWrapper2Ele.appendChild(logo2Ele)
-logo2Ele.appendChild(logo_img2Ele)
+
+// sectionWrapper2Ele.appendChild(logo2Ele)
+// logo2Ele.appendChild(logo_img2Ele)
 sectionWrapper2Ele.appendChild(content2Ele)

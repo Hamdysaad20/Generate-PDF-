@@ -13,6 +13,7 @@ section1Ele.classList.add("Home");
 container1Ele.classList.add("container");
 sectionWrapper1Ele.classList.add("sectionWrapper");
 logo1Ele.classList.add("logo");
+logo1Ele.classList.add("logo1");
 logo_img1Ele.classList.add("logo_image");
 content1Ele.classList.add("content");
 
