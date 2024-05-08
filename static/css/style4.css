@@ -6,7 +6,7 @@
     letter-spacing: 1px;
 }
 .KeyStages4 .KeyOne4 .ContentKeyOne4{
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 1rem;
     line-height: 1.5;
     letter-spacing: .5px;
@@ -40,7 +40,7 @@
     z-index: 2;
     font-weight: bold;
 }
-.KeyStages4  .KeyNum4 .nums4{
+.KeyStages4   .nums4{
     font-weight: bold;
     font-size: 50px;
 }
@@ -50,7 +50,7 @@
     letter-spacing: .5px;
 }
 .KeyStages4 .ContentKeyTwo4 .KeyTwoLeft4 p{
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.3;
 }
 .KeyStages4 .ContentKeyTwo4 .KeyTwoRight4{
@@ -66,7 +66,7 @@
 }
 .KeyStages4 .ContentKeyTwo4 .KeyTwoRight4 .shape4{
     width: 300px;
-    height: 20px;
+    height: 30px;
     background-color: #84CCD0;
     transform: skew(70deg,0deg);
     position: absolute;    
@@ -75,7 +75,7 @@
     margin-bottom: 1rem;
 }
 .KeyStages4 .ContentKeyTwo4 .KeyTwoRight4 .DataLeftTwo4 p{
-    font-size: 15px;
+    font-size: 12px;
 }
 .KeyStages4 .KeyThree4{
     position: relative;
@@ -92,7 +92,7 @@
 }
 .KeyStages4 .KeyThree4 .shape4{
     width: 100%;
-    height: 20px;
+    height: 30px;
     background-color: #84CCD0;
     transform: skew(70deg,0deg);
     position: absolute;
@@ -101,39 +101,42 @@
 .KeyStages4  .KeyIconsFour4{
     position: relative;
 }
-.KeyStages4 .KeyIconsFour4 .KeyLineFour4{
+
+/* KeyFour */
+.KeyFour4{
+    position: relative;
+}
+.KeyLineFour4{
     width: 100%;
     height: 1px;
     background-color: #84CCD0;
     position: absolute;
     top: 1.5rem;
 }
-.KeyStages4  .KeyIconsFour4 .icon4{
+ .KeyFour4 .KeyFour4Data{
     display: flex;
-    justify-content: space-evenly;
+    gap: 2rem;
     align-items: center;
-    
 }
-.KeyStages4  .KeyIconsFour4 .icon4 i{
-   border: 1px solid #84CCD0;
-   padding: 1rem;
-   background-color: white;
-   border-radius: 50%;
-   z-index: 10;
-}
-.KeyStages4 .KeyFourData4{
+.KeyStages4 .KeyFour4 .KeyFour4Data .KeyFour4DataItem{
+    font-size: 12px;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
 }
-.KeyStages4  .KeyFourData4 h5{
-    margin-bottom: .5rem;
+.KeyStages4 .KeyFour4 .KeyFour4Data .KeyFour4DataItem i{
+    border: 1px solid #84CCD0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    z-index: 2;
 }
-.KeyStages4  .KeyFourData4 p{
-    margin-bottom: .5rem;
-    font-size: 15px;
-}
+
+
+/*  */
 .KeyStages4 .KeyFive4 .ShapesContainer4{
     display: flex;
     align-items: center;
@@ -178,10 +181,45 @@
 }
 .KeyStages4 .KeyFive4 .ShapesContainer4 .shapeKeyFive4{
     width: 90%;
-    height: 20px;
+    height: 30px;
     background-color: #84CCD0;
     transform: skew(70deg,0deg);
     position: absolute;
     top: 1rem; 
 
+}
+/* Keysix */
+.KeySix4{
+    position: relative;
+}
+.KeyLineSix4{
+    width: 100%;
+    height: 1px;
+    background-color: #84CCD0;
+    position: absolute;
+    top: 1.5rem;
+}
+ .KeySix4 .KeyFour4Data{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.KeySix4 .KeyFour4Data .KeyFour4DataItem{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.KeySix4 .KeyFour4Data .KeyFour4DataItem i{
+    border: 1px solid #84CCD0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+.KeyFour4DataItem h5{
+    margin-bottom: .5rem;
+    font-size: 14px;
 }

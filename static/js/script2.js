@@ -90,7 +90,4 @@ document.body.appendChild(section2Ele)
 section2Ele.appendChild(container2Ele)
 container2Ele.appendChild(HeaderEle)
 container2Ele.appendChild(sectionWrapper2Ele)
-
-// sectionWrapper2Ele.appendChild(logo2Ele)
-// logo2Ele.appendChild(logo_img2Ele)
 sectionWrapper2Ele.appendChild(content2Ele)

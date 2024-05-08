@@ -70,6 +70,7 @@ ul{
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 .header .headerWrapper .headerItem{
     border-bottom: 2px solid #004062;
