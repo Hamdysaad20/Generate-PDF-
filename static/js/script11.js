@@ -3,8 +3,7 @@ let root11Ele = document.getElementById("root11");
 let section11Ele = document.createElement("section")
 let container11Ele = document.createElement("div")
 let sectionWrapper11Ele = document.createElement("div")
-let logo11Ele = document.createElement("div")
-let logo_img11Ele = document.createElement("img")
+let Header11Ele = document.createElement("header");
 let content11Ele = document.createElement("div")
 let content_company11Ele = document.createElement("div")
 let SWOTContainer11Ele = document.createElement("div")
@@ -15,19 +14,31 @@ let position11Ele = document.createElement("div")
 // Add Classes
 container11Ele.classList.add("container");
 sectionWrapper11Ele.classList.add("sectionWrapper");
-logo11Ele.classList.add("logo");
-logo_img11Ele.classList.add("logo_image");
+Header11Ele.classList.add("header");
 content11Ele.classList.add("content");
 content_company11Ele.classList.add("content_company10");
 SWOTContainer11Ele.classList.add("SWOTContainer10");
 cardsContainer11Ele.classList.add("cardsContainer10");
 position11Ele.classList.add("position10");
 
- // set Attribute
- logo_img11Ele.setAttribute("src", "/static/images/logo.png");
- logo_img11Ele.setAttribute("alt", "logo");
+
+
 
  // inner Html
+ Header11Ele.innerHTML = `
+<div class="headerWrapper">
+    <div class="headerItem">
+        <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+    </div>
+    <div class="headerItem">SWOT Analysis</div>
+    <div class="headerItem headerItemRight">
+        <p>LevelUp ESG</p>
+        <p>|</p>
+        <p class="AssessmentContent">Sustainability Maturity
+        <br/>Assessment </p>
+    </div>
+</div>
+`
 content_company11Ele.innerHTML = "Social SWOT";
 position11Ele.innerHTML = `
     <span>S</span>
@@ -74,9 +85,8 @@ cardsContainer11Ele.innerHTML = `
   // AppendChild
   document.body.appendChild(section11Ele)
   section11Ele.appendChild(container11Ele)
+  container11Ele.appendChild(Header11Ele)
   container11Ele.appendChild(sectionWrapper11Ele)
-  sectionWrapper11Ele.appendChild(logo11Ele)
-  logo11Ele.appendChild(logo_img11Ele)
   sectionWrapper11Ele.appendChild(content11Ele)
   content11Ele.appendChild(content_company11Ele)
   content11Ele.appendChild(SWOTContainer11Ele)

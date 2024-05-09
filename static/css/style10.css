@@ -30,6 +30,7 @@
 .cardsContainer10 .card p{
     text-align: right;
     margin-bottom: 1rem;
+    font-size: 14px;
 }
 .cardsContainer10 .card .numbersCard{
     height: 100px;
