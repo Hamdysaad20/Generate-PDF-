@@ -3,8 +3,7 @@ let root5Ele = document.getElementById("root5");
 let section5Ele = document.createElement("section")
 let container5Ele = document.createElement("div")
 let sectionWrapper5Ele = document.createElement("div")
-let logo5Ele = document.createElement("div")
-let logo_img5Ele = document.createElement("img")
+let Header5Ele = document.createElement("header");
 let content5Ele = document.createElement("div")
 let content_company5Ele = document.createElement("div")
 let content_Page5Ele = document.createElement("div")
@@ -12,17 +11,28 @@ let content_Page5Ele = document.createElement("div")
 // Add Classes
 container5Ele.classList.add("container");
 sectionWrapper5Ele.classList.add("sectionWrapper");
-logo5Ele.classList.add("logo");
-logo_img5Ele.classList.add("logo_image");
+Header5Ele.classList.add("header");
 content5Ele.classList.add("content");
 content_company5Ele.classList.add("content_company");
 content_Page5Ele.classList.add("content_Page5");
 
- // set Attribute
- logo_img5Ele.setAttribute("src", "/static/images/logo.png");
- logo_img5Ele.setAttribute("alt", "logo");
+
 
  // inner Html
+ Header5Ele.innerHTML = `
+ <div class="headerWrapper">
+     <div class="headerItem">
+         <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+     </div>
+     <div class="headerItem">ESG Components</div>
+     <div class="headerItem headerItemRight">
+         <p>LevelUp ESG</p>
+         <p>|</p>
+         <p class="AssessmentContent">Sustainability Maturity
+         <br/>Assessment </p>
+     </div>
+ </div>
+`
 content_company5Ele.innerHTML = "ESG Components";
 content_Page5Ele.innerHTML = `
     <div class="ContentDesc5">
@@ -53,9 +63,8 @@ content_Page5Ele.innerHTML = `
   // AppendChild
   document.body.appendChild(section5Ele)
   section5Ele.appendChild(container5Ele)
+  container5Ele.appendChild(Header5Ele)
   container5Ele.appendChild(sectionWrapper5Ele)
-  sectionWrapper5Ele.appendChild(logo5Ele)
-  logo5Ele.appendChild(logo_img5Ele)
   sectionWrapper5Ele.appendChild(content5Ele)
   content5Ele.appendChild(content_company5Ele)
   content5Ele.appendChild(content_Page5Ele)

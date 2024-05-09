@@ -7,10 +7,13 @@
 }
 .containerImage5{
     width: 100%;
-    height: 500px;
     border: 1px solid gray;
     margin-bottom: 1rem;
 }
+.containerImage5 .ESGimg5{
+    width: 100%;
+    height: 100%;
+}
 .content_Page5 p{
-    font-size: 15px;
+    font-size: 14px;
 }
