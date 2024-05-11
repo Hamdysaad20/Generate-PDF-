@@ -3,22 +3,32 @@
 }
 .sectionWrapper .EndReportHeader26{
     display: flex;
+    align-items: center;
     height: 30%;
     gap: 1rem;
     padding: 2rem 0 0;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
-.sectionWrapper .EndReportHeader26 img{
+.sectionWrapper .EndReportHeader26 .EndReportHeader26Img{
     width: 25%;
-   padding: 0 0 1rem 0;
-    border-bottom: 1px solid black;
+}
+.sectionWrapper .EndReportHeader26 .EndReportHeader26Img img{
+    width: 50%;
 }
 .sectionWrapper .EndReportHeader26 p{
     color: white;
     line-height: 1.5;
     letter-spacing: 1px;
-    border-bottom: 1px solid black;
-    padding: 0 0 1rem 0;
+}
+.lines26{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.lines26 div{
+    height: 2px;
+    width: 30%;
+    background-color: #015B71;
 }
 .sectionWrapper .EndReportSection26{
     position: relative;

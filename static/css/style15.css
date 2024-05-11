@@ -21,9 +21,14 @@
 .content .Questions15Page .QuezData15 .ItemQuiz{
     margin-bottom: 1.5rem;
 }
-.content .Questions15Page .QuezData15 .ItemQuiz .Quiz{
+ .Quiz{
     margin-bottom: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: .5px;
+    font-weight: bold;
 }
-.content .Questions15Page .QuezData15 .ItemQuiz .option{
-   margin-bottom: .5rem;
+ .option{
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-bottom: .5rem;
 }

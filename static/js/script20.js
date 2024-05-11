@@ -44,8 +44,7 @@ let root20Ele = document.getElementById("root20");
 let section20Ele = document.createElement("section")
 let container20Ele = document.createElement("div")
 let sectionWrapper20Ele = document.createElement("div")
-let logo20Ele = document.createElement("div")
-let logo_img20Ele = document.createElement("img")
+let Header20Ele = document.createElement("header");
 let content20Ele = document.createElement("div")
 let Questions20PageEle = document.createElement("div")
 let QuezData20Ele = document.createElement("div")
@@ -54,19 +53,29 @@ let QuezData20Ele = document.createElement("div")
 // Add Classes
 container20Ele.classList.add("container");
 sectionWrapper20Ele.classList.add("sectionWrapper");
-logo20Ele.classList.add("logo");
-logo_img20Ele.classList.add("logo_image");
+Header20Ele.classList.add("header");
 content20Ele.classList.add("content");
 Questions20PageEle.classList.add("Questions20Page");
 QuezData20Ele.classList.add("QuezData20");
 
 
- // set Attribute
- logo_img20Ele.setAttribute("src", "/static/images/logo.png");
- logo_img20Ele.setAttribute("alt", "logo");
 
 
 // inner html
+Header20Ele.innerHTML = `
+<div class="headerWrapper">
+    <div class="headerItem">
+        <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+    </div>
+    <div class="headerItem">Appendix</div>
+    <div class="headerItem headerItemRight">
+        <p>LevelUp ESG</p>
+        <p>|</p>
+        <p class="AssessmentContent">Sustainability Maturity
+        <br/>Assessment </p>
+    </div>
+</div>
+`
 Questions20PageEle.innerHTML = `
     <h1>Appendix: Questions</h1>
     <h5>General Information</h5>
@@ -113,9 +122,8 @@ AllQuiz20.forEach((item , index) => {
  // AppendChild
 document.body.appendChild(section20Ele)
 section20Ele.appendChild(container20Ele)
+container20Ele.appendChild(Header20Ele)
 container20Ele.appendChild(sectionWrapper20Ele)
-sectionWrapper20Ele.appendChild(logo20Ele)
-logo20Ele.appendChild(logo_img20Ele)
 sectionWrapper20Ele.appendChild(content20Ele)
 content20Ele.appendChild(Questions20PageEle)
 Questions20PageEle.appendChild(QuezData20Ele)

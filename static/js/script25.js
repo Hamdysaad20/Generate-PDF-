@@ -3,8 +3,7 @@ let root25Ele = document.getElementById("root25");
 let section25Ele = document.createElement("section")
 let container25Ele = document.createElement("div")
 let sectionWrapper25Ele = document.createElement("div")
-let logo25Ele = document.createElement("div")
-let logo_img25Ele = document.createElement("img")
+let Header25Ele = document.createElement("header");
 let content25Ele = document.createElement("div")
 let Governance25Ele = document.createElement("div")
 
@@ -12,18 +11,28 @@ let Governance25Ele = document.createElement("div")
 // Add Classes
 container25Ele.classList.add("container");
 sectionWrapper25Ele.classList.add("sectionWrapper");
-logo25Ele.classList.add("logo");
-logo_img25Ele.classList.add("logo_image");
+Header25Ele.classList.add("header");
 content25Ele.classList.add("content24");
 Governance25Ele.classList.add("Governance25");
 
 
-// set Attribute
-logo_img25Ele.setAttribute("src", "/static/images/logo.png");
-logo_img25Ele.setAttribute("alt", "logo");
-
 
 // inner html
+
+Header25Ele.innerHTML = `
+<div class="headerWrapper">
+    <div class="headerItem">
+        <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+    </div>
+    <div class="headerItem">Annex</div>
+    <div class="headerItem headerItemRight">
+        <p>LevelUp ESG</p>
+        <p>|</p>
+        <p class="AssessmentContent">Sustainability Maturity
+        <br/>Assessment </p>
+    </div>
+</div>
+`
 content25Ele.innerHTML = `
     <div class="gridComponent25">
         <div class="one25">ESG Components</div>
@@ -89,8 +98,7 @@ Governance25Ele.innerHTML = "Governance"
   // AppendChild
   document.body.appendChild(section25Ele)
   section25Ele.appendChild(container25Ele)
+  container25Ele.appendChild(Header25Ele)
   container25Ele.appendChild(sectionWrapper25Ele)
-  sectionWrapper25Ele.appendChild(logo25Ele)
-  logo25Ele.appendChild(logo_img25Ele)
   sectionWrapper25Ele.appendChild(content25Ele)
   content25Ele.appendChild(Governance25Ele)
