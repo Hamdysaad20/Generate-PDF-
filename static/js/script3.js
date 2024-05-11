@@ -3,8 +3,7 @@ let root3Ele = document.getElementById("root3");
 let section3Ele = document.createElement("section")
 let container3Ele = document.createElement("div")
 let sectionWrapper3Ele = document.createElement("div")
-let logo3Ele = document.createElement("div")
-let logo_img3Ele = document.createElement("img")
+let Header3Ele = document.createElement("header");
 let content3Ele = document.createElement("div")
 let content_company3Ele = document.createElement("div")
 let AssessmentContainer3Ele = document.createElement("div")
@@ -12,18 +11,29 @@ let AssessmentContainer3Ele = document.createElement("div")
 // Add Classes
 container3Ele.classList.add("container");
 sectionWrapper3Ele.classList.add("sectionWrapper");
-logo3Ele.classList.add("logo");
-logo_img3Ele.classList.add("logo_image");
+Header3Ele.classList.add("header");
 content3Ele.classList.add("content");
 content_company3Ele.classList.add("content_company10");
 AssessmentContainer3Ele.classList.add("AssessmentContainer3");
 
 
- // set Attribute
- logo_img3Ele.setAttribute("src", "/static/images/logo.png");
- logo_img3Ele.setAttribute("alt", "logo");
+
 
   // inner Html
+  Header3Ele.innerHTML = `
+    <div class="headerWrapper">
+        <div class="headerItem">
+            <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+        </div>
+        <div class="headerItem">Introduction</div>
+        <div class="headerItem headerItemRight">
+            <p>LevelUp ESG</p>
+            <p>|</p>
+            <p class="AssessmentContent">Sustainability Maturity
+            <br/>Assessment </p>
+        </div>
+    </div>
+`
 content_company3Ele.innerHTML = "Introduction ";
 AssessmentContainer3Ele.innerHTML = `
   <h1 class="Title3">ESG Maturity Assessment</h1>
@@ -80,15 +90,23 @@ AssessmentContainer3Ele.innerHTML = `
 
         </div>
     <div class="CardItem3">
-        <img src="/static/images/spider_chart.png" alt="tree" class="CardImage3"/>
+        <img src="/static/images/tree.png" alt="tree" class="CardImage3"/>
+        <div class="DataTree3">
+            <div class="DataTreeBox DataTreeBoxOne">Improved Efficiencies and Compliance</div>
+            <div class="DataTreeBox DataTreeBoxTwo">ncreased Stakeholder Trust and Reputation</div>
+            <div class="DataTreeBox DataTreeBoxThree">Global Leading Practice Alignment</div>
+            <div class="DataTreeBox DataTreeBoxFour">Harnessing Strengths and Addressing Opportunities</div>
+            <div class="DataTreeBox DataTreeBoxFive">Targeted Assessment and Roadmap</div>
+            <div class="DataTreeBox DataTreeBoxSix">Paving the Way for a Sustainable Future</div>
+        </div>
     </div>
  </div>
  <h4>Alignment to globally accepted standards and framework</h4>
  <div class="standard3">
-    <img src="/static/images/logo.png" class="logoStandard3" alt="logo"/>
-    <img src="/static/images/logo.png" class="logoStandard3" alt="logo"/>
-    <img src="/static/images/logo.png" class="logoStandard3" alt="logo"/>
-    <img src="/static/images/logo.png" class="logoStandard3" alt="logo"/>
+    <img src="/static/images/GRI.png" class="logoStandard3" alt="logo"/>
+    <img src="/static/images/IFRS (1).png" class="logoStandard3" alt="logo"/>
+    <img src="/static/images/SASB (1).png" class="logoStandard3" alt="logo"/>
+    <img src="/static/images/CSRD(1).png" class="logoStandard3" alt="logo"/>
  </div>
 `;
 
@@ -96,9 +114,8 @@ AssessmentContainer3Ele.innerHTML = `
  // AppendChild
  document.body.appendChild(section3Ele)
  section3Ele.appendChild(container3Ele)
+ container3Ele.appendChild(Header3Ele)
  container3Ele.appendChild(sectionWrapper3Ele)
- sectionWrapper3Ele.appendChild(logo3Ele)
- logo3Ele.appendChild(logo_img3Ele)
  sectionWrapper3Ele.appendChild(content3Ele)
  content3Ele.appendChild(content_company3Ele)
  content3Ele.appendChild(AssessmentContainer3Ele)

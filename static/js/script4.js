@@ -2,6 +2,7 @@
 let root4Ele = document.getElementById("root4");
 let section4Ele = document.createElement("section")
 let container4Ele = document.createElement("div")
+let Header4Ele = document.createElement("header");
 let sectionWrapper4Ele = document.createElement("div")
 let logo4Ele = document.createElement("div")
 let logo_img4Ele = document.createElement("img")
@@ -12,19 +13,29 @@ let KeyStages4Ele = document.createElement("div")
 // Add Classes
 container4Ele.classList.add("container");
 sectionWrapper4Ele.classList.add("sectionWrapper");
-logo4Ele.classList.add("logo");
-logo_img4Ele.classList.add("logo_image");
+Header4Ele.classList.add("header");
 content4Ele.classList.add("content");
 content_company4Ele.classList.add("content_company");
 KeyStages4Ele.classList.add("KeyStages4");
 
 
- // set Attribute
-logo_img4Ele.setAttribute("src", "/static/images/logo.png");
- logo_img4Ele.setAttribute("alt", "logo");
 
 
   // inner Html
+  Header4Ele.innerHTML = `
+  <div class="headerWrapper">
+      <div class="headerItem">
+          <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+      </div>
+      <div class="headerItem">Key Stages</div>
+      <div class="headerItem headerItemRight">
+          <p>LevelUp ESG</p>
+          <p>|</p>
+          <p class="AssessmentContent">Sustainability Maturity
+          <br/>Assessment </p>
+      </div>
+  </div>
+`
 content_company4Ele.innerHTML = "Key Stages";
 KeyStages4Ele.innerHTML = `
     <div class="KeyOne4">
@@ -63,7 +74,7 @@ KeyStages4Ele.innerHTML = `
         <div class="ContentKeyTwo4">
             <div class="KeyTwoLeft4">
                 <div class="KeyTitleLeft4">
-                    <div class="KeyNum4">4</div>
+                    <div class="KeyNum4 nums4">4</div>
                     <h4>Key Stages to Strengthen Sustainability Disclosures</h4>
                 </div>
                 <p>
@@ -102,40 +113,40 @@ KeyStages4Ele.innerHTML = `
         <div class="shape4"></div>
     </div>
     <div class="KeyFour4">
-        <div class="KeyIconsFour4">
-            <div class="KeyLineFour4"></div>
-            <div class="icon4">
+        <div class="KeyLineFour4"></div>
+        <div class="KeyFour4Data">
+             <div class="KeyFour4DataItem">
                 <i class="fa-regular fa-rectangle-list"></i>
-                <i class="fa-regular fa-rectangle-list"></i>
-                <i class="fa-regular fa-rectangle-list"></i>
-                <i class="fa-regular fa-rectangle-list"></i>
-            </div>
-        </div>
-        <div class="KeyFourData4">
-            <div>
                 <h5>Identification</h5>
                 <p>Identify specific areas for
-                improvement within your
-                sustainability practices</p>
+                    improvement within your
+                    sustainability practices
+                </p>
             </div>
-            <div>
+             <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
                 <h5>Focus Area</h5>
                 <p>Pinpoint focus areas for
-                enhancement to align
-                with sustainability goals</p>
+                    enhancement to align
+                    with sustainability goals
+                </p>
             </div>
-            <div>
+             <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
                 <h5>Benchmarking</h5>
                 <p>Benchmark your sustainability
-                maturity against industry
-                standards</p>
+                    maturity against industry
+                    standards
+                </p>
             </div>
-            <div>
+             <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
                 <h5>Roadmap Development</h5>
                 <p>Develop a roadmap for
-                progress based on
-                assessment results</p>
-            </div>
+                    progress based on
+                    assessment results
+                </p>
+             </div>
         </div>
     </div>
     <div class="KeyFive4">
@@ -158,42 +169,42 @@ KeyStages4Ele.innerHTML = `
         </div>
     </div>
     <div class="KeySix4">
-        <div class="KeyIconsFour4">
-                <div class="KeyLineFour4"></div>
-                <div class="icon4">
-                    <i class="fa-regular fa-rectangle-list"></i>
-                    <i class="fa-regular fa-rectangle-list"></i>
-                    <i class="fa-regular fa-rectangle-list"></i>
-                    <i class="fa-regular fa-rectangle-list"></i>
-                </div>
-            </div>
-            <div class="KeyFourData4">
-                <div>
-                    <h5>Implementation</h5>
-                    <p>Implement changes
+        <div class="KeyLineSix4"></div>
+        <div class="KeyFour4Data">
+            <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
+                <h5>Implementation</h5>
+                <p>Implement changes
                     based on the
-                    developed roadmap</p>
-                </div>
-                <div>
-                    <h5>Monitoring</h5>
-                    <p>Continuously monitor
+                    developed roadmap
+                </p>
+            </div>
+            <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
+                <h5>Monitoring</h5>
+                <p>Continuously monitor
                     progress and adjust
-                    strategies as needed</p>
-                </div>
-                <div>
-                    <h5>Collaboration</h5>
-                    <p>Collaborate with internal
+                    strategies as needed
+                </p>
+            </div>
+            <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
+                <h5>Collaboration</h5>
+                <p>Collaborate with internal
                     and external partners to
                     enhance sustainability
-                    initiatives</p>
-                </div>
-                <div>
-                    <h5>Prioritization</h5>
-                    <p>Prioritize addressing regulation,
+                    initiatives
+                </p>
+            </div>
+            <div class="KeyFour4DataItem">
+                <i class="fa-regular fa-rectangle-list"></i>
+                <h5>Prioritization</h5>
+                <p>Prioritize addressing regulation,
                     efficiency, and resource
                     management for sustainable
-                    practices</p>
-                </div>
+                    practices
+                </p>
+            </div>
         </div>
     </div>
 `
@@ -202,6 +213,7 @@ KeyStages4Ele.innerHTML = `
   // AppendChild
   document.body.appendChild(section4Ele)
   section4Ele.appendChild(container4Ele)
+  container4Ele.appendChild(Header4Ele)
   container4Ele.appendChild(sectionWrapper4Ele)
   sectionWrapper4Ele.appendChild(logo4Ele)
   logo4Ele.appendChild(logo_img4Ele)

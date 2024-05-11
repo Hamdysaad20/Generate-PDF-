@@ -13,10 +13,17 @@ sectionWrapper26Ele.classList.add("sectionWrapper");
 // inner html
 sectionWrapper26Ele.innerHTML = `
     <div class="EndReportHeader26">
-        <img src="/static/images/logo.png" alt="logo"/>
+        <div class="EndReportHeader26Img">
+            <img src="/static/images/logo.png" alt="logo"/>
+        </div>
         <p>This report was created with cutting-<br/>
             edge technology and expert insights
             from LevelUp ESG</p>
+    </div>
+    <div class="lines26">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
     <div class="EndReportSection26">
         <h4>Our intelligent platform and ecosystem empower businesses to:</h4>

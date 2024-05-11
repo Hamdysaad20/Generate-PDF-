@@ -1,8 +1,95 @@
-.Results6 .ResultImg{
+.Results6 .ResultESG6{
     width: 100%;
     height: 300px;
-    border: .5px solid black;
     margin-bottom: 1rem;
+    position: relative;
+}
+.Results6 .ResultESG6 .social6,
+.Results6 .ResultESG6 .environmental6,
+.Results6 .ResultESG6 .governance6{
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.Results6 .ResultESG6 .social6{
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+.Results6 .ResultESG6 .social6::after{
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 5rem;
+    right: 7rem;
+    transform: rotate(40deg);
+}
+.Results6 .ResultESG6 .social6::before{
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 5rem;
+    right: -1rem;
+    transform: rotate(-40deg);
+}
+.Results6 .ResultESG6 .environmental6{
+    position: absolute;
+    bottom: 2rem;
+    left: 30%;
+}
+.Results6 .ResultESG6 .environmental6::after{
+        content: "";
+        width: 1px;
+        height: 110px;
+        background-color: var(--main-color);
+        position: absolute;
+        top:0rem;
+        left: 9.5rem;
+        transform: rotate(90deg);
+}
+.Results6 .ResultESG6 .governance6{
+    position: absolute;
+    bottom: 2rem;
+    right: 25%;
+}
+.Results6 .ResultESG6 .social6_100,
+.Results6 .ResultESG6 .environmental6_100,
+.Results6 .ResultESG6 .governance6_100{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    background-color: white;
+}
+.Results6 .ResultESG6 .social6_100{
+    position: absolute;
+    top: 1rem;
+    left: 56%;
+}
+.Results6 .ResultESG6 .environmental6_100{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 26%;
+}
+.Results6 .ResultESG6 .governance6_100{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 22%;
 }
 .Results6 .resultData6{
     border: .5px solid #84CCD0;
@@ -30,28 +117,55 @@
 }
 .Results6 .resultTree6 .resultTreeItem .TreeOneImg6{
     width: 100%;
-    height: 100px;
-    border: 1px solid gray;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeOneImg6 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(.2);
 }
 .Results6 .resultTree6 .resultTreeItem .TreeTwoImg6{
     width: 100%;
-    height: 120px;
-    border: 1px solid gray;
+    height: 70px;
+
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeTwoImg6 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(.4);
 }
 .Results6 .resultTree6 .resultTreeItem .TreeThreeImg6{
     width: 100%;
-    height: 140px;
-    border: 1px solid gray;
+ height: 100px; 
+
+    margin-bottom: 1rem; 
+}
+.Results6 .resultTree6 .resultTreeItem .TreeThreeImg6 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(.5);
+  
 }
 .Results6 .resultTree6 .resultTreeItem .TreeFourImg6{
     width: 100%;
-    height: 160px;
-    border: 1px solid gray;
+    height: 120px;
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeFourImg6 img{
+    width: 100%;
+    height: 100%;
+    transform: scale(.7);
 }
 .Results6 .resultTree6 .resultTreeItem .TreeFiveImg6{
     width: 100%;
-    height: 180px;
-    border: 1px solid gray;
+    height: 140px;
+    margin-bottom: 1rem;
+}
+.Results6 .resultTree6 .resultTreeItem .TreeFiveImg6 img{
+    width: 100%;
+    height: 100%;
 }
 .Results6 .resultTree6 .resultTreeItem h4{
     font-size: 15px;
@@ -60,7 +174,7 @@
     margin-bottom: 1rem;
 }
 .Results6 .resultTree6 .resultTreeItem p{
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
     letter-spacing: .5px;
 }
@@ -73,4 +187,7 @@
     text-align: center;
     line-height: 1.5;
     letter-spacing: .5px;
+}
+.Results6 .resultDataEnd6 span{
+    font-weight: bold;
 }

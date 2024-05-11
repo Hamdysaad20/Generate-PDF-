@@ -44,8 +44,7 @@ let root21Ele = document.getElementById("root21");
 let section21Ele = document.createElement("section")
 let container21Ele = document.createElement("div")
 let sectionWrapper21Ele = document.createElement("div")
-let logo21Ele = document.createElement("div")
-let logo_img21Ele = document.createElement("img")
+let Header21Ele = document.createElement("header");
 let content21Ele = document.createElement("div")
 let Questions21PageEle = document.createElement("div")
 let QuezData21Ele = document.createElement("div")
@@ -54,19 +53,28 @@ let QuezData21Ele = document.createElement("div")
 // Add Classes
 container21Ele.classList.add("container");
 sectionWrapper21Ele.classList.add("sectionWrapper");
-logo21Ele.classList.add("logo");
-logo_img21Ele.classList.add("logo_image");
+Header21Ele.classList.add("header");
 content21Ele.classList.add("content");
 Questions21PageEle.classList.add("Questions21Page");
 QuezData21Ele.classList.add("QuezData21");
 
 
- // set Attribute
- logo_img21Ele.setAttribute("src", "/static/images/logo.png");
- logo_img21Ele.setAttribute("alt", "logo");
-
 
 // inner html
+Header21Ele.innerHTML = `
+<div class="headerWrapper">
+    <div class="headerItem">
+        <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+    </div>
+    <div class="headerItem">Appendix</div>
+    <div class="headerItem headerItemRight">
+        <p>LevelUp ESG</p>
+        <p>|</p>
+        <p class="AssessmentContent">Sustainability Maturity
+        <br/>Assessment </p>
+    </div>
+</div>
+`
 Questions21PageEle.innerHTML = `
     <h1>Appendix: Questions</h1>
     <h5>General Information</h5>
@@ -113,9 +121,8 @@ AllQuiz21.forEach((item , index) => {
  // AppendChild
 document.body.appendChild(section21Ele)
 section21Ele.appendChild(container21Ele)
+container21Ele.appendChild(Header21Ele)
 container21Ele.appendChild(sectionWrapper21Ele)
-sectionWrapper21Ele.appendChild(logo21Ele)
-logo21Ele.appendChild(logo_img21Ele)
 sectionWrapper21Ele.appendChild(content21Ele)
 content21Ele.appendChild(Questions21PageEle)
 Questions21PageEle.appendChild(QuezData21Ele)

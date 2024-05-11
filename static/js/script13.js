@@ -30,8 +30,7 @@ let rootEle = document.getElementById("root13");
 let sectionEle = document.createElement("section")
 let containerEle = document.createElement("div")
 let sectionWrapperEle = document.createElement("div")
-let logoEle = document.createElement("div")
-let logo_imgEle = document.createElement("img")
+let Header13Ele = document.createElement("header");
 let contentEle = document.createElement("div")
 let content_company13Ele = document.createElement("div")
 let content_titleEle = document.createElement("h2")
@@ -41,16 +40,13 @@ let listContainerEle = document.createElement("div")
 let HelpsBtnEle = document.createElement("div")
 let listsEle = document.createElement("div")
 
-// set Attribute
-logo_imgEle.setAttribute("src", "/static/images/logo.png");
-logo_imgEle.setAttribute("alt", "logo");
+
 
 // Add classes
 sectionEle.classList.add("section13");
 containerEle.classList.add("container");
 sectionWrapperEle.classList.add("sectionWrapper");
-logoEle.classList.add("logo");
-logo_imgEle.classList.add("logo_image");
+Header13Ele.classList.add("header");
 contentEle.classList.add("content");
 content_company13Ele.classList.add("content_company");
 content_titleEle.classList.add("content_title");
@@ -61,6 +57,20 @@ HelpsBtnEle.classList.add("HelpsBtn");
 listsEle.classList.add("listsItem");
 
 // inner html
+Header13Ele.innerHTML = `
+<div class="headerWrapper">
+    <div class="headerItem">
+        <img src="/static/images/logo.png" alt="logo" class="logo_image"/>
+    </div>
+    <div class="headerItem">Levelling Up</div>
+    <div class="headerItem headerItemRight">
+        <p>LevelUp ESG</p>
+        <p>|</p>
+        <p class="AssessmentContent">Sustainability Maturity
+        <br/>Assessment </p>
+    </div>
+</div>
+`
 content_company13Ele.innerHTML = "levelling Up"
 content_titleEle.innerHTML = "Navigating ESG Risks and Challenges"
 content_descEle.innerHTML = "Embarking on an ESG journey can present risks and challenges for businesses. However, with the right tools, guidance, and support, these risks can be effectively mitigated."
@@ -95,10 +105,9 @@ lists.forEach(( item) => {
 
 // AppendChild
 sectionEle.appendChild(containerEle)
+containerEle.appendChild(Header13Ele)
 containerEle.appendChild(sectionWrapperEle)
-sectionWrapperEle.appendChild(logoEle)
 sectionWrapperEle.appendChild(contentEle)
-logoEle.appendChild(logo_imgEle)
 contentEle.appendChild(content_company13Ele)
 contentEle.appendChild(content_titleEle)
 contentEle.appendChild(content_descEle)
